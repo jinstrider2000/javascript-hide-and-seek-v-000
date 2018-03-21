@@ -25,5 +25,9 @@ function deepestChild() {
       deepest_level = current_level;
       found = true;
     }
+    else {
+      current_level = next_level;
+    }
   }
+  return deepest_level
 }
