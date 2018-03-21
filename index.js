@@ -16,5 +16,14 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-
+  let current_level = document.getElementById("grand-node");
+  var next_level, deepest_level;
+  let found = false;
+  while (found === false) {
+    next_level = current_level.children
+    if (next_level.children == undefined) {
+      deepest_level = current_level;
+      found = true;
+    }
+  }
 }
