@@ -20,13 +20,13 @@ function deepestChild() {
   var next_level, deepest_level;
   let found = false;
   while (found === false) {
-    next_level = current_level[0].children
+    next_level = current_level.children
     if (next_level == undefined) {
       deepest_level = current_level;
       found = true;
     }
     else {
-      current_level = next_level;
+      current_level = next_level[0];
     }
   }
   return deepest_level
