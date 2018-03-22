@@ -20,9 +20,8 @@ function deepestChild() {
   var next_level, deepest_level;
   var found = false;
   while (found === false) {
-    console.log(current_level);
     next_level = current_level.children
-    if (next_level == undefined) {
+    if (next_level.length == 0) {
       deepest_level = current_level;
       found = true;
     }
